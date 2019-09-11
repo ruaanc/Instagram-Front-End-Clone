@@ -14,10 +14,55 @@ class New extends Component {
                                 <div className="form-group input-group">
                                     <div className="input-group-prepend">
                                         <span className="input-group-text">
-                                        <i className="fa fa-user"></i>
+                                        <i className="fa fa-user"><img src="https://img.icons8.com/metro/20/000000/email.png" alt=""></img></i>
                                         </span>
                                     </div>
                                     <input className="form-control" placeholder="Nickname" type="text"></input> 
+                                </div>
+                                
+                                {/*Place Field*/}
+                                <div className="form-group input-group">
+                                    <div className="input-group-prepend">
+                                        <span className="input-group-text">
+                                        <i className="fa fa-place"><img src="https://img.icons8.com/material/20/000000/point-of-interest.png" alt=""></img></i>
+                                        </span>
+                                    </div>
+                                    <input className="form-control" placeholder="Place" type="text"></input> 
+                                </div>
+
+                                {/*Description Field*/}
+                                <div className="form-group input-group">
+                                    <div className="input-group-prepend">
+                                        <span className="input-group-text">
+                                        <i className="fa fa-place"><img src="https://img.icons8.com/metro/20/000000/create-new.png" alt=""></img></i>
+                                        </span>
+                                    </div>
+                                    <input className="form-control" placeholder="Description" type="text"></input> 
+                                </div>
+
+                                {/*Hashtags Field*/}
+                                <div className="form-group input-group">
+                                    <div className="input-group-prepend">
+                                        <span className="input-group-text">
+                                        <i className="fa fa-place"><img src="https://img.icons8.com/metro/20/000000/hashtag-2.png" alt=""></img></i>
+                                        </span>
+                                    </div>
+                                    <input className="form-control" placeholder="Hashtags" type="text"></input> 
+                                </div>
+
+                                {/*Image Link Field*/}
+                                <div className="form-group input-group">
+                                    <div className="input-group-prepend">
+                                        <span className="input-group-text">
+                                        <i className="fa fa-place"><img src="https://img.icons8.com/metro/20/000000/link.png" alt=""></img></i>
+                                        </span>
+                                    </div>
+                                    <input className="form-control" placeholder="Image Link" type="text"></input> 
+                                </div>
+
+                                {/* Button Post */}
+                                <div className="form-group">
+                                    <button type="submit" className="btn btn-primary btn-block"><b>Post</b></button>
                                 </div>
                             </form>
                         </article>
