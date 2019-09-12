@@ -12,9 +12,7 @@ class Feed extends Component {
    async componentDidMount() {
         const response = await api.get('posts');
 
-        this.setState({ feed: response.data.data });
-
-        console.log(this.state.feed.data)
+        this.setState({ feed: response.data.data.reverse() });
         
    } 
 
@@ -22,7 +20,7 @@ class Feed extends Component {
         return (
             <section id="post-list">
                { this.state.feed.map(post => (
-                   <article>
+                   <article key={post.id}>
                    <header>
                        <div className="user-info">
                            <span>{ post.author }</span>
