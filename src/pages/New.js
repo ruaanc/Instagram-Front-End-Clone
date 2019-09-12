@@ -10,6 +10,7 @@ class New extends Component {
                             <h4 className="card-title mt-3 text-center">Create Post</h4>
                             <p className="text-center">Make your post free</p>
                             <form>
+
                                 {/*Name Field*/}
                                 <div className="form-group input-group">
                                     <div className="input-group-prepend">
@@ -64,6 +65,7 @@ class New extends Component {
                                 <div className="form-group">
                                     <button type="submit" className="btn btn-primary btn-block"><b>Post</b></button>
                                 </div>
+                                
                             </form>
                         </article>
                     </div>

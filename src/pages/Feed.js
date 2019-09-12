@@ -1,35 +1,50 @@
 import React, { Component } from 'react';
+import api from '../services/api'
 
 import './Feed.css';
 
 class Feed extends Component {
+
+    state = {
+        feed: [],
+    }
    
+   async componentDidMount() {
+        const response = await api.get('posts');
+
+        this.setState({ feed: response.data.data });
+
+        console.log(this.state.feed.data)
+        
+   } 
 
     render() {
         return (
             <section id="post-list">
-                                <article>
-                                    <header>
-                                        <div className="user-info">
-                                            <span>Ruan Carlos</span>
-                                            <span className="place">Condado</span>
-                                        </div>
-                                        <img src="https://img.icons8.com/ios-glyphs/30/000000/more.png" alt=""></img>  
-                                    </header>
-                                    <img src="http://www.cecon.pb.gov.br/media/filer_public_thumbnails/filer_public/39/81/3981b15e-536b-4024-bca7-d1ce972a28f7/img_5027.jpg__1680x1050_q85_crop_subsampling-2_upscale.jpg" alt=""></img>
-                                    <footer>
-                                            <div className="actions">
-                                                <img src="https://img.icons8.com/material-outlined/24/000000/filled-like.png" alt=""></img>
-                                                <img src="https://img.icons8.com/ios/24/000000/topic.png" alt=""></img>    
-                                                <img src="https://img.icons8.com/material-rounded/24/000000/filled-sent.png" alt=""></img>
-                                            </div>
-                                            <strong>curtidas</strong>
-                                            <p>
-                                                
-                                                <span>#sucesso</span>
-                                            </p>
-                                        </footer>
-                                </article>
+               { this.state.feed.map(post => (
+                   <article>
+                   <header>
+                       <div className="user-info">
+                           <span>{ post.author }</span>
+                           <span className="place">{ post.place }</span>
+                       </div>
+                       <img src="https://img.icons8.com/ios-glyphs/30/000000/more.png" alt=""></img>  
+                   </header>
+                   <img src={post.image} alt=""></img>
+                   <footer>
+                           <div className="actions">
+                               <img src="https://img.icons8.com/material-outlined/24/000000/filled-like.png" alt=""></img>
+                               <img src="https://img.icons8.com/ios/24/000000/topic.png" alt=""></img>    
+                               <img src="https://img.icons8.com/material-rounded/24/000000/filled-sent.png" alt=""></img>
+                           </div>
+                           <strong> { post.like } curtidas</strong>
+                           <p>
+                               { post.description }
+                               <span>{ post.hashtags }</span>
+                           </p>
+                       </footer>
+                    </article>
+               ))}                 
             </section>
         );
     }
