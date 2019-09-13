@@ -16,6 +16,9 @@ class Feed extends Component {
         
    } 
 
+    handleLike = async id => {
+       await api.put(`likes/${id}`);
+   }
     render() {
         return (
             <section id="post-list">
@@ -26,12 +29,14 @@ class Feed extends Component {
                            <span>{ post.author }</span>
                            <span className="place">{ post.place }</span>
                        </div>
-                       <img src="https://img.icons8.com/ios-glyphs/30/000000/more.png" alt=""></img>  
+                       <img src="https://img.icons8.com/ios-glyphs/30/000000/more.png" alt=""></img>       
                    </header>
                    <img src={post.image} alt=""></img>
                    <footer>
                            <div className="actions">
-                               <img src="https://img.icons8.com/material-outlined/24/000000/filled-like.png" alt=""></img>
+                               <button type="button" onClick={() => this.handleLike(post.id)}>
+                                    <img src="https://img.icons8.com/material-outlined/24/000000/filled-like.png" alt=""></img>
+                               </button>
                                <img src="https://img.icons8.com/ios/24/000000/topic.png" alt=""></img>    
                                <img src="https://img.icons8.com/material-rounded/24/000000/filled-sent.png" alt=""></img>
                            </div>
