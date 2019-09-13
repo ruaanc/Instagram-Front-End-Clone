@@ -17,7 +17,7 @@ class Feed extends Component {
    } 
 
     handleLike = async id => {
-       await api.put(`likes/${id}`);
+       await api.post(`posts/likes/${id}`);
    }
     render() {
         return (
