@@ -38,8 +38,8 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 <h2>Technologies Used</h2>
 <ul> 
-    <li>Laravel 5.8</li> 
-    <li>MySql</li> 
+    <li>React JS</li> 
+    <li>Axios</li> 
 </ul>
 
 <h2>Implementation</h2>
@@ -62,4 +62,4 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
     <li>Feed</li>
 </ul>
 
-<h1>Important: Test api with this Frontend Access -> https://github.com/ruaanc/Instagram-Front-End-Clone.</h1>
+<h1>Important: Test api with this Backend Access -> https://github.com/ruaanc/Instagram-Back-End.</h1>
