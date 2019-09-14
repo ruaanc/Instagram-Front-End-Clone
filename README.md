@@ -29,40 +29,37 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 ### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<h1>About Project</h1> 
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+<h2>Objective</h2>
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+<p>The purpose of this repository is to store the code and make it easier to manage Instagram Clone Backend settings for the web.</p>
 
-## Learn More
+<h2>Technologies Used</h2>
+<ul> 
+    <li>Laravel 5.8</li> 
+    <li>MySql</li> 
+</ul>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<h2>Implementation</h2>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<h3>Expected Implementation</h3>
+<ul> 
+    <li>Post</li> 
+    <li>Register</li> 
+    <li>Login</li> 
+    <li>Like</li>
+    <li>Comment</li>
+    <li>Feed</i>
+    <li>Deploy to Container Docker</li>
+</ul>
 
-### Code Splitting
+<h3>Current Implementation</h3>
+<ul> 
+    <li>Post</li>  
+    <li>Like</li>
+    <li>Feed</li>
+</ul>
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+<h1>Important: Test api with this Frontend Access -> https://github.com/ruaanc/Instagram-Front-End-Clone.</h1>
